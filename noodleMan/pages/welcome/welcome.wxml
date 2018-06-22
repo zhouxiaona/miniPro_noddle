@@ -1,0 +1,9 @@
+<view class="mycontainer">
+   <button bindtap='getuserinfo'  wx:if="{{showBtn}}" class='upBtn'>点击我获取头像昵称</button> 
+  <block wx:else>
+    <image src="{{userInfo.avatarUrl}}" class="pic"></image>
+  <text class="name">hello,{{userInfo.nickName}}</text>
+  </block>
+
+  <text class='downBtn' wx:if="{{!showBtn}}" bindtap='nextPage'>开启你的小程序之旅</text>
+</view>

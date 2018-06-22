@@ -1,0 +1,16 @@
+<view class='container_detail'>
+  <image class='bgimg' src='{{dataList.contentImg}}'></image>
+  <image class='musicStyle' src='{{musicImgUrl}}' bindtap='musicController'></image>
+  <view class='headStyle'>
+    <image class='avater' src='{{dataList.headImg}}'></image>
+    <text class='zhihu'>知乎</text>
+    <text class='time'>发表于</text>
+    <text class='time'>{{dataList.addtime}}</text>
+  </view>
+  <text class='bigtitle'>{{dataList.title}}</text>
+  <view class='lineStyle'>
+    <image src="{{collectionUrl}}" class='collectImg' bindtap='collectionAction'></image>
+    <image src="/images/icon/share.png" class='shareImg' bindtap='shareAction'></image>
+  </view>
+  <text class='content'>{{dataList.content}}</text>
+</view>

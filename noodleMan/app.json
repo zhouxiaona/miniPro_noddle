@@ -1,0 +1,56 @@
+{
+  "pages":[
+    "pages/welcome/welcome",
+    "pages/movie/movie",
+    "pages/index/index",
+    "pages/article/article",
+    "pages/logs/logs",
+    "pages/articleDetail/articleDetail",
+    "pages/noddle/noddle",
+    "pages/firstPage/firstPage",
+    "pages/my/my"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#B3D4DB",
+    "navigationBarTitleText": "面条君",
+    "navigationBarTextStyle":"white"
+  },
+  "tabBar":{
+    "color": "#707070",
+    "selectedColor": "#13227a",
+    
+    "list":[
+      {
+        "pagePath": "pages/firstPage/firstPage",
+        "text": "首页",
+        "iconPath": "/images/tab/firstPage.png",
+        "selectedIconPath": "/images/tab/firstPage_hl.png"
+      },
+      {
+        "pagePath":"pages/movie/movie",
+        "text":"电影",
+        "iconPath":"/images/tab/dianying.png",
+        "selectedIconPath":"/images/tab/dianying_hl.png"
+      },
+      {
+        "pagePath": "pages/noddle/noddle",
+        "text": "面条君",
+        "iconPath": "/images/tab/noddle.png",
+        "selectedIconPath": "/images/tab/noddle_hl.png"
+      },
+      {
+        "pagePath":"pages/article/article",
+        "text":"阅读",
+        "iconPath":"/images/tab/yuedu.png",
+        "selectedIconPath":"/images/tab/yuedu_hl.png"
+      },
+      {
+        "pagePath": "pages/my/my",
+        "text": "我的",
+        "iconPath": "/images/tab/my.png",
+        "selectedIconPath": "/images/tab/my_hl.png"
+      }
+    ]
+  }
+}

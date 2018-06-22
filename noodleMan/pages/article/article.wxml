@@ -1,0 +1,23 @@
+<import src="article-item-template/article-item-template" />
+<view class="mycontainer">
+  <swiper 
+    indicator-dots="{{indicatorDots}}"
+    autoplay="{{autoplay}}" 
+    interval="{{interval}}" 
+    duration="{{duration}}"
+    >
+    <block wx:for="{{imgUrls}}" wx:key="{{index}}">
+      <swiper-item>
+        <image src="{{item}}" class="slide-image myimg"/>
+      </swiper-item>
+    </block>
+  </swiper>
+
+  <view class='lineStyle'></view>
+
+  <view class='listStyle' wx:for="{{dataList}}" wx:key="{{index}}">
+    <view bindtap='gotoDetail' data-postid="{{item.id}}">
+      <template is="itemtpl" data="{{...item}}"/>
+    </view>
+  </view>
+</view>

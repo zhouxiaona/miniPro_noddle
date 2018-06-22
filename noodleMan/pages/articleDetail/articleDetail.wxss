@@ -1,0 +1,71 @@
+.container_detail{
+  display: flex;
+  flex-direction: column;
+}
+.bgimg{
+  width: 750rpx;
+  height: 520rpx;
+  margin-bottom: 15rpx;
+}
+.musicStyle{
+  width:100rpx;
+  height:100rpx;
+  position:absolute;
+  top:210rpx;
+  left:320rpx;
+}
+.headStyle{
+  margin-bottom: 75rpx;
+}
+.avater{
+  width: 55rpx;
+  height: 55rpx;
+  margin-left: 30rpx;
+  margin-right: 20rpx;
+}
+.zhihu{
+  font-size: 20px;
+  margin-right: 15rpx;
+  vertical-align: bottom;
+}
+.time{
+  font-size: 16px;
+  margin-right: 10rpx;
+  color: rgb(102, 102, 102);
+}
+.bigtitle{
+  font-size:25px;
+  font-weight:bold;
+  margin-left:40rpx;
+  color:rgb(75, 85, 108);
+}
+.lineStyle{
+  background:rgb(229, 229, 229);
+  height:1px;
+  margin-left:45rpx;
+  margin-right:45rpx;
+  margin-top:75rpx;
+  position:relative;
+}
+.collectImg{
+  width: 90rpx;
+  height: 90rpx;
+  position: absolute;
+  right: 120rpx;
+  top: -40rpx;
+}
+.shareImg{
+  width: 90rpx;
+  height: 90rpx;
+  position: absolute;
+  right: 0;
+  top: -40rpx;
+}
+.content{
+  margin-top:70rpx;
+  margin-left:30rpx;
+  margin-right:30rpx;
+  color:rgb(124, 124, 124);
+  font-size:15px;
+}
+

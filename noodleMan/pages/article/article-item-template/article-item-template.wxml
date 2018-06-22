@@ -1,0 +1,16 @@
+<template name="itemtpl">
+  <view class='up'>
+    <image class="avater" src="{{headImg}}"></image>
+    <text class='time'>{{addtime}}</text>
+  </view>
+  <text class='bigtitle'>{{title}}</text>
+  <image class='content_image' src='{{contentImg}}'></image>
+  <text class='content_text'>{{content}}</text>
+  <view>
+    <image class='down_image' src='/images/icon/chat1.png'></image>
+    <text class='down_text'>{{read}}</text>
+    <image class='down_image' src='/images/icon/view.png'></image>
+    <text class='down_text'>{{look}}</text>
+  </view>
+  <view class='bgStyle'></view>
+</template>

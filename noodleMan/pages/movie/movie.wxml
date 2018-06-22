@@ -1,0 +1,7 @@
+<view class='searchStyle'></view>
+<view class='listStyle'>
+  <view class='liStyle'>
+    <image></image>
+    <text class='movieName'></text>
+  </view>
+</view>

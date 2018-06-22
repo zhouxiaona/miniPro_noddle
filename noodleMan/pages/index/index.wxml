@@ -1,0 +1,62 @@
+<!--index.wxml-->
+<!--引入模板 -->
+<import src="movie-item-template/movie-item-template"/>
+
+<view class="container">
+
+<!--点击获取用户信息，展示用户头像和昵称  -->
+  <view class="userinfo">
+    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
+    <block wx:else>
+      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
+      <text class="userinfo-nickname" style='color:lightblue'>{{userInfo.nickName}}</text>
+    </block>
+  </view>
+
+  <!--显示hello world字样  -->
+  <view class="usermotto">
+    <text class="user-motto">{{motto}}</text>
+  </view>
+
+  <!--地图组件的使用  -->
+  <!-- <map longitude='上海' latitude='上海' ></map> -->
+
+  <!--for循环的使用-->
+  <view wx:for="{{arr}}" wx:for-index="ids" wx:for-item="itemMsg">
+    <text>{{ids}}姓名是：{{itemMsg.name}}</text>
+    ;;;
+    <text>{{ids}}年龄是：{{itemMsg.age}}岁</text>
+  </view>
+
+  <!--九九乘法表-->
+  <!-- <view wx:for="{{[1,2,3,4,5,6,7,8,9]}}" wx:for-item="i">
+    <view wx:for="{{[1,2,3,4,5,6,7,8,9]}}" wx:for-item="j">
+      <view wx:if="{{i <= j}}">
+        {{i}} * {{j}} = {{i*j}}
+      </view>
+    </view>
+  </view> -->
+
+  <!--button  按钮 与hidden属性-->
+  <button>点击我获取信息</button>
+  <block>
+    <view>这是一个block结构</view>
+  </block>
+  <button hidden=''>点击我获取信息</button>
+
+  <!--条件语句  -->
+  <view wx:if="{{showBtn > 6 }}">111</view>
+  <view wx:elif="{{showBtn > 4 }}">222</view>
+  <view wx:else>666</view>
+
+  <!-- 引入模板 -->
+  <block wx:for="{{arr}}" wx:key="{{index}}">
+     <template is="movieItem" data="{{...item}}"></template>
+  </block>
+
+  <!--事件处理  -->
+   <view bindtap='tapOuter'> 
+     <button bindtap='tapInner'>click me at inner !!</button>
+  </view>
+ 
+</view>

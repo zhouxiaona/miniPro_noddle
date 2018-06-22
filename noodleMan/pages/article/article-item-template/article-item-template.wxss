@@ -1,0 +1,52 @@
+.up{
+  display: flex;
+  margin-top: 15rpx;
+}
+.avater{
+  width: 55rpx;
+  height: 55rpx;
+  margin-left: 20rpx;
+  margin-right: 45rpx;
+  vertical-align: bottom;
+}
+.time{
+  font-size: 20px;
+  color: rgb(102,102,102);
+}
+.bigtitle{
+  margin-left: 20rpx;
+  font-weight: bold;
+  font-size: 25px;
+  margin-top: 35rpx;
+  margin-bottom: 25rpx;
+}
+.content_image{
+  width: 750rpx;
+  height: 340rpx;
+}
+.content_text{
+  margin-left: 20rpx;
+  margin-right: 20rpx;
+  font-size: 15px;
+  color: rgb(102,102,102);
+  margin-top: 35rpx;
+}
+.down_image{
+  width: 35rpx;
+  height: 30rpx;
+  vertical-align: middle;
+  margin-left: 20rpx;
+}
+.down_text{
+  color: rgb(120, 102, 102);
+  font-size: 15px;
+  margin-left: 16rpx;
+}
+.bgStyle{
+  height: 40rpx;
+  background: rgb(248, 248, 248);
+  border-top: 1px solid rgb(237, 237, 237);
+  border-bottom: 1px solid rgb(237, 237, 237);
+}
+
+

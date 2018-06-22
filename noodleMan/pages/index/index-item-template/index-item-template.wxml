@@ -1,0 +1,5 @@
+<template name="movieItem">
+  <view> 姓名是：{{name}}</view>
+   ;;;
+  <view>年龄是：{{age}}岁</view>
+</template>
