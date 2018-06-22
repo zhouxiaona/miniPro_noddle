@@ -8,29 +8,69 @@
   </view>
   <!-- 首页导航栏  -->
   <view class='navBar'>
-    <view class='nav'>分类</view>
-    <view class='nav'>推荐</view>
-    <view class='nav'>精品</view>
-    <view class='nav'>直播</view>
-    <view class='nav'>广播</view>
+    <view class='nav' data-index="1" catchtap='changeIndex'>分类</view>
+    <view class='nav' data-index="2" catchtap='changeIndex'>推荐</view>
+    <view class='nav' data-index="3" catchtap='changeIndex'>精品</view>
+    <view class='nav' data-index="4" catchtap='changeIndex'>直播</view>
+    <view class='nav' data-index="5" catchtap='changeIndex'>广播</view>
+    <!-- 导航滑动条  -->
+    <view class='borderBottomSlide' style="left:{{leftNav}}rpx;"></view>
   </view>
   <!-- 左右滑动块  -->
-  <swiper>
+  <swiper current='{{current}}' bindchange="bindchanges" style="height:100%;">
     <block>
       <swiper-item>
-        <view class='items'>分类</view>
+        <view class='items fenlei'>
+          <view class='liulan'>
+            <view class='liulanText'>最近浏览</view>
+            <view class='liulanBtn'>悬疑</view>
+            <view class='liulanBtn'>头条</view>
+            <view class='liulanBtn'>直播</view>
+          </view>
+          <view class='classfy'>
+            <view class='classfy_top'>
+              <view class='top_line'>
+                <view class='lis'>
+                  <image src="../../images/classify/sound.png"></image>
+                  <text>有声小说</text>
+                </view>
+                <view class='lis'>社科</view>
+                <view class='lis'>经管</view>
+                <view class='lis'>文学</view>
+              </view>
+              <view class='top_line'>
+                <view class='lis'>
+                  <image src="../../images/classify/book.png"></image>
+                  <text>畅销书</text>
+                </view>
+                <view class='lis'>社科</view>
+                <view class='lis'>经管</view>
+                <view class='lis'>文学</view>
+              </view>
+              <view class='top_line'>
+                <view class='lis'>
+                  <image src="../../images/classify/boy.png"></image>
+                  <text>儿童</text>
+                </view>
+                <view class='lis'>白茶</view>
+                <view class='lis'>清欢</view>
+                <view class='lis'>无别事</view>
+              </view>
+            </view>
+          </view>
+        </view>
       </swiper-item>
       <swiper-item>
-        <view class='items'>推荐模块</view>
+        <view class='items tuijian'>推荐模块</view>
       </swiper-item>
       <swiper-item>
-        <view class='items'>精品模块</view>
+        <view class='items jingpin'>精品模块</view>
       </swiper-item>
       <swiper-item>
-        <view class='items'>直播模块</view>
+        <view class='items zhibo'>直播模块</view>
       </swiper-item>
       <swiper-item>
-        <view class='items'>广播模块</view>
+        <view class='items guangbo'>广播模块</view>
       </swiper-item>
     </block>
   </swiper>

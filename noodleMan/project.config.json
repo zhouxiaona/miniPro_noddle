@@ -10,7 +10,7 @@
 	"compileType": "miniprogram",
 	"libVersion": "1.9.91",
 	"appid": "wx567c201ffad07835",
-	"projectname": "noodleMan",
+	"projectname": "miniPro_noddle",
 	"isGameTourist": false,
 	"condition": {
 		"search": {

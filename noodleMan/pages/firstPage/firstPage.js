@@ -5,9 +5,26 @@ Page({
    * 页面的初始数据
    */
   data: {
-    imgUrls:[1,2,3,4,5]
+    leftNavArr:[15,180,345,510,675],
+    leftNav:15,
+    current:0
   },
-
+  // 点击导航栏
+  changeIndex:function(e){
+    // console.log(e.currentTarget.dataset.index);
+    this.setData({
+      leftNav: this.data.leftNavArr[(Number(e.currentTarget.dataset.index))-1],
+      current: (Number(e.currentTarget.dataset.index)) - 1
+    })
+  },
+  // 滑动轮播图
+  bindchanges:function(event){
+    // console.log(event.detail.current);
+    this.setData({
+      leftNav: this.data.leftNavArr[event.detail.current],
+      current: event.detail.current
+    })
+  },
   /**
    * 生命周期函数--监听页面加载
    */
