@@ -1,2 +1,2 @@
 # miniPro_noddle
-I love noddles,so...ememem
+just for study wxminiPro
